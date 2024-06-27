@@ -1,0 +1,49 @@
+﻿<Window x:Class="ST10026525.PROG6221.POE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10026525.PROG6221.POE"
+        mc:Ignorable="d"
+        Title="Recipe Book" Height="600" Width="800">
+    <Grid>
+        <!-- Grid to organize buttons or menu items -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Option 1: Enter a new recipe -->
+            <Button Content="Enter a new recipe" Click="EnterNewRecipe_Click" Margin="10"/>
+
+            <!-- Option 2: Display all recipes titles -->
+            <Button Content="Display all recipes titles" Click="DisplayAllRecipes_Click" Margin="10" Grid.Row="1"/>
+
+            <!-- Option 3: Display a recipe with its ingredients and steps -->
+            <Button Content="Display a recipe with its ingredients and steps" Click="DisplayRecipeDetails_Click" Margin="10" Grid.Row="2"/>
+
+            <!-- Option 4: Enter to scale recipe -->
+            <Button Content="Enter to scale recipe" Click="ScaleRecipe_Click" Margin="10" Grid.Row="3"/>
+
+            <!-- Option 5: Reset the ingredients of a recipe -->
+            <Button Content="Reset the ingredients of a recipe" Click="ResetIngredients_Click" Margin="10" Grid.Row="4"/>
+
+            <!-- Option 6: Filter all recipes -->
+            <Button Content="Filter all recipes" Click="FilterRecipes_Click" Margin="10" Grid.Row="5"/>
+
+            <!-- Option 7: Clear data -->
+            <Button Content="Clear data" Click="ClearData_Click" Margin="10" Grid.Row="6"/>
+
+            <!-- Option 8: Exit button -->
+            <Button Content="Exit" Click="Exit_Click" Margin="10" Grid.Row="7"/>
+        </Grid>
+    </Grid>
+</Window>
+
